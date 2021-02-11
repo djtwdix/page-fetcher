@@ -7,7 +7,7 @@ request(args[0], (error, response, body) => {
   console.log('statusCode:', response && response.statusCode); 
   fs.writeFile(args[1], body, (err) => {
     if (err) throw err
-    console.log(`Downloaded and saved ${bytes} to ${args[1]}`)
+    console.log(`Downloaded and saved bytes to ${args[1]}`)
   });
 })
 
